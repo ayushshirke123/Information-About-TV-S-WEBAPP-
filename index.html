@@ -4,325 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evolution of Television</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url('https://static.vecteezy.com/system/resources/previews/030/316/987/large_2x/nostalgic-charm-vintage-yellow-tv-rests-on-wooden-table-mint-blue-backdrop-vertical-mobile-wallpaper-ai-generated-free-photo.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        .container {
-            width: 90%; /* Adjusted for smaller screens */
-            margin: auto;
-            background: white;
-            padding: 15px; /* Reduced padding for smaller screens */
-            border-radius: 10px; /* Smaller radius for smaller screens */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            color: #e49c0c;
-            font-size: 24px; /* Larger font size for better readability */
-        }
-
-        .timeline {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .event {
-            background: white;
-            padding: 10px; /* Reduced padding for smaller screens */
-            margin: 10px 0;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            width: 100%; /* Full width for smaller screens */
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-
-        .event:hover {
-            transform: scale(1.05);
-        }
-
-        .event img {
-            width: 100%;
-            height: auto;
-            max-height: 200px; /* Smaller images for smaller screens */
-            object-fit: contain;
-            border-radius: 5px;
-        }
-
-        .details {
-            display: none;
-            padding-top: 10px;
-            text-align: justify;
-            font-size: 14px; /* Smaller font size for smaller screens */
-            line-height: 1.5;
-            padding: 10px;
-            background: #f8f8f8;
-            border-radius: 5px;
-        }
-
-        .button {
-            background: #007bff;
-            color: white;
-            padding: 8px 12px; /* Smaller button for smaller screens */
-            border: none;
-            cursor: pointer;
-            margin-top: 10px;
-            border-radius: 5px;
-            transition: background 0.3s;
-            font-size: 14px; /* Smaller font size for smaller screens */
-        }
-
-        .button:hover {
-            background: #0056b3;
-        }
-
-        .comparison, .evolution {
-            background: #f9f9f9;
-            padding: 15px; /* Reduced padding for smaller screens */
-            margin-top: 15px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: none;
-            width: 100%; /* Full width for smaller screens */
-        }
-
-        .comparison table, .evolution table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-
-        .comparison th, .evolution th {
-            background-color: #007bff;
-            color: white;
-            font-size: 14px; /* Smaller font size for smaller screens */
-        }
-
-        .comparison td, .evolution td {
-            padding: 8px; /* Reduced padding for smaller screens */
-            text-align: center;
-            font-size: 12px; /* Smaller font size for smaller screens */
-        }
-
-        .evolution-button {
-            width: 100%; /* Full width for smaller screens */
-            background: white;
-            padding: 10px; /* Reduced padding for smaller screens */
-            margin: 10px 0; /* Adjusted margin for smaller screens */
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
-            transition: transform 0.3s;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .evolution-button:hover {
-            transform: scale(1.05);
-        }
-
-        /* Media Queries for Responsive Design */
-        @media (max-width: 768px) {
-            .container {
-                width: 95%; /* Adjusted for smaller screens */
-                padding: 10px; /* Reduced padding for smaller screens */
-            }
-
-            h1 {
-                font-size: 20px; /* Smaller font size for smaller screens */
-            }
-
-            .event h2 {
-                font-size: 18px; /* Smaller font size for smaller screens */
-            }
-
-            .details {
-                font-size: 12px; /* Smaller font size for smaller screens */
-            }
-
-            .button {
-                padding: 6px 10px; /* Smaller button for smaller screens */
-                font-size: 12px; /* Smaller font size for smaller screens */
-            }
-
-            .comparison th, .evolution th {
-                font-size: 12px; /* Smaller font size for smaller screens */
-            }
-
-            .comparison td, .evolution td {
-                font-size: 10px; /* Smaller font size for smaller screens */
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Evolution of Television</h1>
         <div class="timeline">
-            <div class="event" onclick="toggleDetails('mechanical')">
+            <div class="event">
                 <h2>1920s - Mechanical Television</h2>
-                <button class="button">Show Information</button>
-                <div id="mechanical" class="details">
-                    <img src="https://lh4.googleusercontent.com/proxy/F5obQKv4YCIjoumRbUcXnwrdrf6q-soNJn2RCBhd6BoZhyhcYFn_PgY4FJoCu8jxhVoCwWK0dhIq0e8Ub1imuBI5N8Y" alt="Mechanical TV">
-                    <p>Mechanical television or mechanical scan television is an obsolete television system that relies on a mechanical scanning device, such as a rotating disk with holes in it or a rotating mirror drum, to scan the scene and generate the video signal, and a similar mechanical device at the receiver to display the picture. This contrasts with vacuum tube electronic television technology, using electron beam scanning methods, for example in cathode-ray tube (CRT) televisions. Subsequently, modern solid-state liquid-crystal displays (LCD) and LED displays are now used to create and display television pictures.</p>
-                    <p>Mechanical-scanning methods were used in the earliest experimental television systems in the 1920s and 1930s. One of the first experimental wireless television transmissions was by Scottish inventor John Logie Baird on October 2, 1925, in London. By 1928 many radio stations were broadcasting experimental television programs using mechanical systems. However, the technology never produced images of sufficient quality to become popular with the public. Mechanical-scan systems were largely superseded by electronic-scan technology in the mid-1930s, which was used in the first commercially successful television broadcasts which began in the late 1930s. In the U.S., experimental stations such as W2XAB in New York City began broadcasting mechanical television programs in 1931 but discontinued operations on February 20, 1933, until returning with an all-electronic system in 1939.</p>
-                    <p>During the 1940s, Black and White TV were like a luxury. Only the rich could afford it. Instead of a colorful display, there were only black and white images. The screen was bulky and small. The controls were on the TV panel itself. Charlie Chaplin’s movies were quite famous at that time.</p>
-                </div>
+                <a href="mechanical.html"><button class="button">Show Information</button></a>
             </div>
 
-            <div class="event" onclick="toggleDetails('crt')">
+            <div class="event">
                 <h2>1950s - CRT Television</h2>
-                <button class="button">Show Information</button>
-                <div id="crt" class="details">
-                    <img src="https://woahtech.com/wp-content/uploads/2020/09/21-Inch-Ultra-Slim-Color-Television-CRT-TV-1024x912.jpg" alt="CRT TV">
-                    <p>Display images on a phosphorescent screen. The images may represent electrical waveforms on an oscilloscope, a frame of video on an analog television set (TV), digital raster graphics on a computer monitor, or other phenomena like radar targets. A CRT in a TV is commonly called a picture tube.</p>
-                    <p>In CRT TVs and computer monitors, the entire front area of the tube is scanned repeatedly and systematically in a fixed pattern called a raster. In color devices, an image is produced by controlling the intensity of each of three electron beams, one for each additive primary color (red, green, and blue) with a video signal as a reference. In modern CRT monitors and TVs, the beams are bent by magnetic deflection, using a deflection yoke. Electrostatic deflection is commonly used in oscilloscopes.</p>
-                    <p>Since the early 2010s, CRTs have been superseded by flat-panel display technologies such as LCD, plasma display, and OLED displays which are cheaper to manufacture and run, as well as significantly lighter and thinner. Flat-panel displays can also be made in very large sizes whereas 40–45 inches (100–110 cm) was about the largest size of a CRT.</p>
-                </div>
+                <a href="crt.html"><button class="button">Show Information</button></a>
             </div>
 
-            <div class="event" onclick="toggleDetails('lcd')">
+            <div class="event">
                 <h2>2000s - LCD and Plasma TVs</h2>
-                <button class="button">Show Information</button>
-                <div id="lcd" class="details">
-                    <img src="https://woahtech.com/wp-content/uploads/2020/09/samsung-la32e420-lcd-127.jpg" alt="LCD TV">
-                    <p>A liquid-crystal-display television (LCD TV) is a television set that uses a liquid-crystal display to produce images. It is by far the most widely produced and sold type of television display. LCD TVs are thin and light, but have some disadvantages compared to other display types such as high power consumption, poorer contrast ratio, and inferior color gamut.</p>
-                    <p>LCD TVs rose in popularity in the early years of the 21st century, and exceeded sales of cathode-ray-tube televisions worldwide from late 2007 on. Sales of CRT TVs dropped rapidly after that, as did sales of competing technologies such as plasma display panels and rear-projection television.</p>
-                    <p>Passive matrix LCDs first became common as portable computer displays in the 1980s, competing for market share with plasma displays. The LCDs had very slow refresh rates that blurred the screen even with scrolling text, but their light weight and low cost were major benefits. These TVs are flat instead of bulky.</p>
-                </div>
+                <a href="lcd.html"><button class="button">Show Information</button></a>
             </div>
 
-            <div class="event" onclick="toggleDetails('oled')">
+            <div class="event">
                 <h2>2020s - OLED and QLED TVs</h2>
-                <button class="button">Show Information</button>
-                <div id="oled" class="details">
-                    <img src="https://woahtech.com/wp-content/uploads/2020/09/lg-oled65e8pua-2-cropped-100756251-large-400x300.jpg" alt="OLED TV">
-                    <p>OLED = Organic Light-Emitting Diode. This technology came in 2019. You can find these screens in most smartphones and TVs. Here, there is no pixel lag. This TV is thin and lightweight. You can enjoy watching it from any angle.</p>
-                    <p>An organic light-emitting diode (OLED), also known as organic electroluminescent (organic EL) diode, is a type of light-emitting diode (LED) in which the emissive electroluminescent layer is an organic compound film that emits light in response to an electric current. OLEDs are used to create digital displays in devices such as television screens, computer monitors, and portable systems such as smartphones and handheld game consoles.</p>
-                    <p>QLED Quantum Dot Light Emitting Diode. This is the newest technology. It enhances picture quality and improves clarity. These TVs come with HDR technology which improves the screen resolution. You can enjoy 4K as well as 8K TVs.</p>
-                </div>
+                <a href="oled.html"><button class="button">Show Information</button></a>
             </div>
 
-            <!-- Toggle for Comparison -->
-            <div class="event" onclick="toggleDetails('comparison')">
+            <div class="event">
                 <h2>Comparison of All TV Types</h2>
-                <button class="button">Show Comparison</button>
+                <a href="comparison.html"><button class="button">Show Comparison</button></a>
+            </div>
+
+            <div class="event">
+                <h2>Evolution Of Television</h2>
+                <a href="evolution.html"><button class="button">Show Evolution</button></a>
             </div>
         </div>
-
-        <!-- Comparison Section -->
-        <div id="comparison" class="comparison">
-            <h2>Comparison of Different Types of Televisions</h2>
-            <table>
-                <tr>
-                    <th>Feature</th>
-                    <th>Mechanical TV</th>
-                    <th>CRT TV</th>
-                    <th>LCD TV</th>
-                    <th>OLED/QLED TV</th>
-                </tr>
-                <tr>
-                    <td>Display Technology</td>
-                    <td>Mechanical Scanning</td>
-                    <td>Electron Beam & Phosphor</td>
-                    <td>Liquid Crystal & Backlight</td>
-                    <td>Organic Light Emitting Diodes</td>
-                </tr>
-                <tr>
-                    <td>Image Quality</td>
-                    <td>Low Resolution</td>
-                    <td>Moderate Resolution</td>
-                    <td>High Resolution</td>
-                    <td>Very High Resolution, Rich Colors</td>
-                </tr>
-                <tr>
-                    <td>Size</td>
-                    <td>Small, Bulky</td>
-                    <td>Large, Bulky</td>
-                    <td>Thin</td>
-                    <td>Very Thin</td>
-                </tr>
-                <tr>
-                    <td>Color</td>
-                    <td>Black and White</td>
-                    <td>Black and White, Later Color</td>
-                    <td>Color</td>
-                    <td>Vibrant Color</td>
-                </tr>
-                <tr>
-                    <td>Power Consumption</td>
-                    <td>High</td>
-                    <td>Moderate</td>
-                    <td>Moderate</td>
-                    <td>Low</td>
-                </tr>
-                <tr>
-                    <td>Thickness</td>
-                    <td>Very Bulky</td>
-                    <td>Bulky</td>
-                    <td>Thin</td>
-                    <td>Very Thin</td>
-                </tr>
-                <tr>
-                    <td>Common Uses</td>
-                    <td>Early TV Experiments</td>
-                    <td>Home Entertainment</td>
-                    <td>Home Entertainment</td>
-                    <td>Home Entertainment, High-End Displays</td>
-                </tr>
-            </table>
-        </div>
-
-        <!-- Evolution of TV Section -->
-        <div class="event" onclick="toggleDetails('evolution')">
-            <h2>Evolution Of Television</h2>
-            <button class="button">Show Evolution</button>
-            <div id="evolution" class="details">
-                <img src="https://woahtech.com/wp-content/uploads/2020/09/d43d69_3244ae9adaee4510a107d6cf8663d50b_mv2-e1600056256697.jpg" alt="Evolution">
-        <p>  <p>The evolution of television has been a remarkable journey, transforming from a novel invention to a ubiquitous and indispensable part of modern life. Here's a glimpse into its key milestones:</p>
-        <p><strong>Early Days (Late 19th and Early 20th Century):</strong></p>
-        <ul>
-            <li><strong>Conceptualization:</strong> The idea of transmitting images electronically over distances emerged in the late 19th century, with various scientists and inventors exploring different technologies.</li>
-            <li><strong>Mechanical Television:</strong> In the 1920s, John Logie Baird demonstrated the first public mechanical television system, using a rotating disc to scan and transmit images. However, these early systems had limited image quality and resolution.</li>
-            <li><strong>Electronic Television:</strong> Philo Farnsworth's invention of the image dissector camera tube in the late 1920s paved the way for electronic television, which offered significantly improved image quality and resolution.</li>
-        </ul>
-        <p><strong>The Dawn of Broadcasting (1930s-1950s):</strong></p>
-        <ul>
-            <li><strong>First Public Broadcasts:</strong> The 1930s saw the first public television broadcasts in countries like the UK and the US, marking the beginning of television as a mass medium.</li>
-            <li><strong>Early Television Sets:</strong> The first commercially available television sets were bulky and expensive, limiting their adoption.</li>
-            <li><strong>Growth of Networks:</strong> The establishment of major television networks like NBC and CBS in the US led to the development of regular programming and the growth of the television industry.</li>
-        </ul>
-        <p><strong>The Golden Age of Television (1950s-1960s):</strong></p>
-        <ul>
-            <li><strong>Increased Popularity:</strong> Television ownership surged in the 1950s, as sets became more affordable and programming became more diverse and appealing.</li>
-            <li><strong>Rise of Genres:</strong> Popular genres like sitcoms, dramas, westerns, and news programs emerged, shaping the landscape of television entertainment.</li>
-            <li><strong>Cultural Impact:</strong> Television began to exert a significant influence on culture and society, shaping public opinion and becoming a major source of information and entertainment.</li>
-        </ul>
-        <p><strong>Technological Advancements (1960s-1990s):</strong></p>
-        <ul>
-            <li><strong>Color Television:</strong> The introduction of color television in the 1960s added a new dimension to the viewing experience, making it more immersive and engaging.</li>
-</p>
-</div>
-        <!-- Evolution of TV Content -->
-       
-            
-
-    <script>
-        function toggleDetails(id) {
-            let details = document.getElementById(id);
-            details.style.display = details.style.display === 'block' ? 'none' : 'block';
-        }
-    </script>
+    </div>
 </body>
 </html>
